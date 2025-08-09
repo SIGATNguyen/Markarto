@@ -16,7 +16,7 @@
 <body>
   <div id="mobile-blocker" class="mobile-hidden">
   <div class="blocker-wrapper">
-    <h1 class="blocker-title">Site non disponible sur mobile</h1>
+    <h1 class="blocker-title">Site non disponible sur mobile<br><br> et petit format</h1>
     <p class="blocker-text">
   Désolé ! L'affichage mobile n'est pas encore prêt. Pour une expérience optimale,
   <br><span class="highlight">consulte ce site sur un ordinateur.</span>
@@ -45,64 +45,89 @@
   </div>
   
   <!-- Légendes dynamiques avec animations -->
-  <div id="fixed-legend">
-    <!-- Hiroshima -->
-    <div id="legend-hiroshima" class="fixed-legend-content" style="display: none;">
-      <h3 class="legend-title">Impacts à Hiroshima</h3>
-      <button id="toggle-destroyed-fixed" class="toggle-btn active" data-layer="hiroshima_detruit_layer">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#af0d1d"/></svg>
-        <span class="toggle-label">Destruction totale</span>
-      </button>
-      <button id="toggle-lessdestroyed-fixed" class="toggle-btn active" data-layer="hiroshima_moinsdetruit_layer">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#ea504c"/></svg>
-        <span class="toggle-label">Destruction partielle</span>
-      </button>
-      <button id="toggle-sauve-fixed" class="toggle-btn active" data-layer="hiroshima_sauve_layer">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#f39c9e"/></svg>
-        <span class="toggle-label">Zones épargnées</span>
-      </button>
-      <button id="toggle-poi-hiro-fixed" class="toggle-btn active" data-layer="poi_points">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#af0d1d"/></svg>
-        <span class="toggle-label">Points d'intérêt</span>
-      </button>
-    </div>
-    <!-- Nagasaki -->
-    <div id="legend-nagasaki" class="fixed-legend-content" style="display: none;">
-      <h3 class="legend-title">Impacts à Nagasaki</h3>
-      <button id="toggle-naga-detruit-fixed" class="toggle-btn active" data-layer="nagasaki_detruit_layer">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#af0d1d"/></svg>
-        <span class="toggle-label">Destruction totale</span>
-      </button>
-      <button id="toggle-naga-feu-fixed" class="toggle-btn active" data-layer="nagasaki_feu_layer">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#ea504c"/></svg>
-        <span class="toggle-label">Zones en feu</span>
-      </button>
-      <button id="toggle-naga-sauve-fixed" class="toggle-btn active" data-layer="nagasaki_sauve_layer">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#f39c9e"/></svg>
-        <span class="toggle-label">Zones épargnées</span>
-      </button>
-      <button id="toggle-poi-naga-fixed" class="toggle-btn active" data-layer="poi_points">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#af0d1d"/></svg>
-        <span class="toggle-label">Points d'intérêt</span>
-      </button>
-    </div>
-    <!-- Rennes -->
-    <div id="legend-rennes" class="fixed-legend-content" style="display: none;">
-      <h3 class="legend-title">Impact simulé sur Rennes</h3>
-      <button id="toggle-rennes-detruit-fixed" class="toggle-btn active" data-layer="rennes_detruit_layer">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#af0d1d"/></svg>
-        <span class="toggle-label">Destruction totale</span>
-      </button>
-      <button id="toggle-rennes-partiel-fixed" class="toggle-btn active" data-layer="rennes_partiel_layer">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#ea504c"/></svg>
-        <span class="toggle-label">Destruction partielle</span>
-      </button>
-      <button id="toggle-poi-rennes-fixed" class="toggle-btn active" data-layer="poi_points">
-        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#af0d1d"/></svg>
-        <span class="toggle-label">Points d'intérêt</span>
-      </button>
-    </div>
+<div id="fixed-legend">
+  <!-- Hiroshima -->
+  <div id="legend-hiroshima" class="fixed-legend-content" style="display: none;">
+    <h3 class="legend-title">Impacts à Hiroshima</h3>
+    <button id="toggle-destroyed-fixed" class="toggle-btn active" data-layer="hiroshima_detruit_layer">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#000000"/>
+      </svg>
+      <span class="toggle-label">Destruction totale</span>
+    </button>
+    <button id="toggle-lessdestroyed-fixed" class="toggle-btn active" data-layer="hiroshima_moinsdetruit_layer">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#555555"/>
+      </svg>
+      <span class="toggle-label">Destruction partielle</span>
+    </button>
+    <button id="toggle-sauve-fixed" class="toggle-btn active" data-layer="hiroshima_sauve_layer">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#AAAAAA"/>
+      </svg>
+      <span class="toggle-label">Zones épargnées</span>
+    </button>
+    <button id="toggle-poi-hiro-fixed" class="toggle-btn active" data-layer="poi_points">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#FEFF99"/>
+      </svg>
+      <span class="toggle-label">Points d'intérêt</span>
+    </button>
   </div>
+
+  <!-- Nagasaki -->
+  <div id="legend-nagasaki" class="fixed-legend-content" style="display: none;">
+    <h3 class="legend-title">Impacts à Nagasaki</h3>
+    <button id="toggle-naga-detruit-fixed" class="toggle-btn active" data-layer="nagasaki_detruit_layer">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#000000"/>
+      </svg>
+      <span class="toggle-label">Destruction totale</span>
+    </button>
+    <button id="toggle-naga-feu-fixed" class="toggle-btn active" data-layer="nagasaki_feu_layer">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#555555"/>
+      </svg>
+      <span class="toggle-label">Zones en feu</span>
+    </button>
+    <button id="toggle-naga-sauve-fixed" class="toggle-btn active" data-layer="nagasaki_sauve_layer">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#AAAAAA"/>
+      </svg>
+      <span class="toggle-label">Zones épargnées</span>
+    </button>
+    <button id="toggle-poi-naga-fixed" class="toggle-btn active" data-layer="poi_points">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#FEFF99"/>
+      </svg>
+      <span class="toggle-label">Points d'intérêt</span>
+    </button>
+  </div>
+
+  <!-- Rennes -->
+  <div id="legend-rennes" class="fixed-legend-content" style="display: none;">
+    <h3 class="legend-title">Impact simulé sur Rennes</h3>
+    <button id="toggle-rennes-detruit-fixed" class="toggle-btn active" data-layer="rennes_detruit_layer">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#000000"/>
+      </svg>
+      <span class="toggle-label">Destruction totale</span>
+    </button>
+    <button id="toggle-rennes-partiel-fixed" class="toggle-btn active" data-layer="rennes_partiel_layer">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#555555"/>
+      </svg>
+      <span class="toggle-label">Destruction partielle</span>
+    </button>
+    <button id="toggle-poi-rennes-fixed" class="toggle-btn active" data-layer="poi_points">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" fill="#FEFF99"/>
+      </svg>
+      <span class="toggle-label">Points d'intérêt</span>
+    </button>
+  </div>
+</div>
+
   
   <!-- Contenu du scrollytelling avec sections -->
   <main id="scroll-container">
@@ -128,7 +153,7 @@
                 <div class="scroll-indicator">
                   <span>Défiler pour découvrir</span>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 4V20M12 20L6 14M12 20L18 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 4V20M12 20L6 14M12 20L18 14" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
               </div>
@@ -287,9 +312,9 @@
               La carte interactive montre l'étendue des dégâts :
             </p>
             <ul class="impact-legend">
-              <li><span class="impact-dot destruction"></span><strong>Zones rouge foncé</strong> Destruction totale où l'onde de choc et la chaleur ont rasé tous les bâtiments.</li>
-              <li><span class="impact-dot partial"></span><strong>Zones rouge clair</strong> Dommages structurels importants mais non totaux.</li>
-              <li><span class="impact-dot spared"></span><strong>Zones rose</strong> Quartiers relativement épargnés par l'explosion directe.</li>
+              <li><span class="impact-dot destruction"></span><strong>Zones noir foncé</strong> Destruction totale où l'onde de choc et la chaleur ont rasé tous les bâtiments.</li>
+              <li><span class="impact-dot partial"></span><strong>Zones gris foncé</strong> Dommages structurels importants mais non totaux.</li>
+              <li><span class="impact-dot spared"></span><strong>Zones gris clair</strong> Quartiers relativement épargnés par l'explosion directe.</li>
             </ul>
             <div class="stat-container">
               <div class="stat-item">
@@ -315,9 +340,9 @@
               Trois jours après Hiroshima, "Fat Man", une bombe au plutonium de 21 kilotonnes, explose à 503 mètres au-dessus de Nagasaki.
             </p>
             <ul class="impact-legend">
-              <li><span class="impact-dot destruction"></span><strong>Zones rouge foncé</strong> Épicentre et quartiers totalement détruits par l'explosion.</li>
-              <li><span class="impact-dot fire"></span><strong>Zones rouge clair</strong> Secteurs ravagés par les incendies secondaires.</li>
-              <li><span class="impact-dot spared"></span><strong>Zones rose</strong> Quartiers ayant échappé à la destruction massive.</li>
+              <li><span class="impact-dot destruction"></span><strong>Zones noir foncé</strong> Épicentre et quartiers totalement détruits par l'explosion.</li>
+              <li><span class="impact-dot fire"></span><strong>Zones gris foncé</strong> Secteurs ravagés par les incendies secondaires.</li>
+              <li><span class="impact-dot spared"></span><strong>Zones gris clair</strong> Quartiers ayant échappé à la destruction massive.</li>
             </ul>
             <p>
               La topographie vallonnée de Nagasaki a partiellement protégé certains quartiers, contrairement à Hiroshima située en plaine.
@@ -427,8 +452,8 @@
               Comment visualiser l'ampleur des bombardements atomiques dans un contexte qui nous est familier ? Cette simulation montre l'impact qu'aurait eu "Little Boy" sur la ville de Rennes aujourd'hui.
             </p>
             <ul class="impact-legend">
-              <li><span class="impact-dot destruction"></span><strong>Zone rouge foncé</strong> Destruction totale dans un rayon de 1,6 km autour du point d'impact (centre-ville).</li>
-              <li><span class="impact-dot partial"></span><strong>Zone rouge clair</strong> Dommages structurels majeurs jusqu'à 3,2 km, affectant la majeure partie de la ville.</li>
+              <li><span class="impact-dot destruction"></span><strong>Zone noir foncé</strong> Destruction totale dans un rayon de 1,6 km autour du point d'impact (centre-ville).</li>
+              <li><span class="impact-dot partial"></span><strong>Zone gris foncé</strong> Dommages structurels majeurs jusqu'à 3,2 km, affectant la majeure partie de la ville.</li>
             </ul>
             <p>
               Cette simulation illustre l'échelle des destructions et permet de mieux comprendre l'impact concret qu'ont eu ces armes sur Hiroshima et Nagasaki.
