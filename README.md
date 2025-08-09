@@ -4,7 +4,7 @@
 
 Ce projet est une application web interactive présentant l'impact des bombardements atomiques d'Hiroshima et Nagasaki lors de la Seconde Guerre mondiale, avec une perspective contemporaine incluant une simulation sur la ville de Rennes. Développé par l'équipe du Master SIGAT (Université Rennes 2) en partenariat avec Ouest-France, ce récit journalistique cartographique vous plonge dans cette page sombre de l'histoire, 80 ans après les événements.
 
-![MAKARTO](https://github.com/user-attachments/assets/f79ae023-1489-4342-b5cc-17c4bafa91b4)
+[![MAKARTO](https://github.com/user-attachments/assets/f79ae023-1489-4342-b5cc-17c4bafa91b4)](https://github.com/SIGATNguyen/Markarto/blob/df538b95a84f6714363897e448107aeeb481082b/assets/gifread.gif)
 
 
 ## Fonctionnalités principales
