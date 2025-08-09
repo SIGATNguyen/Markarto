@@ -181,39 +181,39 @@ map.on('load', function() {
   }
   
   // --- Ajout des couches pour Hiroshima ---
-  addMapLayer('hiroshima_detruit', 
-    './assets/hiroshima/h_total_detruit.geojson', 
-    '#af0d1d');
-  
-  addMapLayer('hiroshima_moinsdetruit', 
-    './assets/hiroshima/h_partiel_detruit.geojson', 
-    '#ea504c');
-  
-  addMapLayer('hiroshima_sauve', 
-    './assets/hiroshima/h_sauve.geojson', 
-    '#f39c9e');
+addMapLayer('hiroshima_detruit', 
+  './assets/hiroshima/h_total_detruit.geojson', 
+  '#000000'); // noir profond
 
-  // --- Ajout des couches pour Nagasaki ---
-  addMapLayer('nagasaki_detruit', 
-    './assets/nagasaki/n_total_detruit.geojson', 
-    '#af0d1d');
+addMapLayer('hiroshima_moinsdetruit', 
+  './assets/hiroshima/h_partiel_detruit.geojson', 
+  '#555555'); // gris anthracite
+
+addMapLayer('hiroshima_sauve', 
+  './assets/hiroshima/h_sauve.geojson', 
+  '#AAAAAA'); // gris clair
+
+// --- Ajout des couches pour Nagasaki ---
+addMapLayer('nagasaki_detruit', 
+  './assets/nagasaki/n_total_detruit.geojson', 
+  '#000000');
+
+addMapLayer('nagasaki_feu', 
+  './assets/nagasaki/n_partiel_detruit.geojson', 
+  '#555555');
+
+addMapLayer('nagasaki_sauve', 
+  './assets/nagasaki/n_sauve.geojson', 
+  '#AAAAAA');
   
-  addMapLayer('nagasaki_feu', 
-    './assets/nagasaki/n_partiel_detruit.geojson', 
-    '#ea504c');
-  
-  addMapLayer('nagasaki_sauve', 
-    './assets/nagasaki/n_sauve.geojson', 
-    '#f39c9e');
-    
-  // --- Ajout des couches pour Rennes (simulation) ---
-  addMapLayer('rennes_detruit', 
-    './assets/rennes/tampon_1km6_4326.geojson', 
-    '#af0d1d');
-  
-  addMapLayer('rennes_partiel', 
-    './assets/rennes/tampon_3km_4326.geojson', 
-    '#ea504c');
+// --- Ajout des couches pour Rennes (simulation) ---
+addMapLayer('rennes_detruit', 
+  './assets/rennes/tampon_1km6_4326.geojson', 
+  '#000000');
+
+addMapLayer('rennes_partiel', 
+  './assets/rennes/tampon_3km_4326.geojson', 
+  '#555555');
 
   // Ajout des points d'intérêt
   addPointsOfInterest();
@@ -264,7 +264,7 @@ function addPointsOfInterest() {
       source: 'poi_source',
       paint: {
         'circle-radius': 6,
-        'circle-color': '#AF0D1D',
+        'circle-color': '#FEFF99',
         'circle-stroke-width': 2,
         'circle-stroke-color': '#FFFFFF',
         'circle-opacity': 0.8
@@ -1238,20 +1238,17 @@ function precacheResources() {
   });
 }
 
-function blockMobileDevices() {
+function blockSmallScreens() {
   const blocker = document.getElementById("mobile-blocker");
-  
-  // Détection simplifiée
-  const isMobileUserAgent = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  const hasSmallScreen = window.innerWidth <= 768;
-  
-  const isReallyMobile = isMobileUserAgent && hasSmallScreen;
-  
-  if (isReallyMobile && blocker) {
+
+  // Détection uniquement par largeur d'écran
+  if (window.innerWidth <= 960 && blocker) {
     document.body.innerHTML = '';
     document.body.appendChild(blocker);
     blocker.classList.remove("mobile-hidden");
   }
 }
 
-window.addEventListener("DOMContentLoaded", blockMobileDevices);
+window.addEventListener("DOMContentLoaded", blockSmallScreens);
+window.addEventListener("resize", blockSmallScreens); // Si la fenêtre est redimensionnée
+
